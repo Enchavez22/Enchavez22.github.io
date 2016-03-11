@@ -1,57 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Enrique Chavez</title>
-    </head>
-    <body>
-        <div id="navbar">
-            <ul>
-                <li><a id="red" href="https://sites.google.com/a/alphapublicschools.org/alpha-cindy-avitia-high-school/teacher-pages/yoho">Home</a></li>
-                <li><a id="ttt" href="./portfolio.html">Portfolio</a></li>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Enrique Chavez Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:#C2C2C2;
+    }
+    
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color:blue;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:red;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: red;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: yellow;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("http://www.ps4accessories.com/wp-content/uploads/2013/06/bogus-controller-comparison.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                    <li><a href="./portfolio.html">What's For Dinner</a></li>
+                    <li><a href="./portfolio.html">Ad Design</a></li>
+                    <li><a href="./portfolio.html">Algebra Challenges</a></li> 
+                </ul>
             </ul>
-         </div>
-        <style>
-            body {
-                background-color:white;
-            }
-            #main {
-                color:red;
-            }
-            #red {
-                color:red;
-            }
-            #bruh {
-                color:blue;
-            }
-            #ttt {
-                color:green;
-            }
-            .hola {
-                color:blue;
-            }
+        </div>
+        <div class="main-page">
+            <div class="image-container"></div>
             
-        </style>
-    
-        
-         <div id="main">    
-    <h1>All About Me, Enrique Chavez</h1>
-        <img src="https://www.kasandbox.org/programming-images/animals/retriever.png"width="600">
-        
-    <h1 class="hola">About Me</h1>
-    <p> This webstie is about me. Im a founding at ninth grader<br>                Alpha Cindy Avittia high school.
-        If you would like to contact<br> me because this website is boring
-        for you just scroll all the<br> way to the bottom of the page
-        that were all my contacts are<br> at, the bottom of the page.</p>
-            <h2 class="hola">Introduction</h2>
-    <p> Hello my name is Enrique Chavez. I live in San Jose, California.      <br>I live with my family of five including me. The names of my<br>           parents are Enrique(Dad) and Rosario(Mom). Its kinda                      obviuos<br> whose my mom and my dad. (:</p>  
-            <h2 class="hola">Games I Like</h2>
-    <p>Im a person who likes soccer so imagin the goals I score on the<br>
-       video games there just beautiful. But I play FIFA I don't like PES        .<br> PES seem like a fiction game wher goals can be easily made          but hard.<br> But in FIFA its hard to score golas because its more        realistic.</p> 
-             <h2 class="hola">Conclusion</h2>
-    <p>This who I am so if you would like to contact me for anythinh.<br>        Here's my phone number and my emal for you guys. My<br> phone             number is (408) 896-2059 and this my email<br> 
-    <a href="https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&osid=1&service=mail&ss=1&ltmpl=default&rm=false#identifier">enrique.chavez@alphapublicschools.org.</a></p>
-    
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Enrique's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">Video Games</h2>
+                  <p class="text-info">Video game have been in my life since I remember. The games that I have seen my whole life and keep seeing them are the call of duty games. Call oF Duty being in my life since I was a little kid. Another game that has been in my life too is FIFA. FIFA has been with me since I can remeber.
             </div>
-        </body>
-    </html>
+            <div class="right-panel"> 
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info">I currently serve as the founding computer science teacher at Alpha Cindy Avitia High School, where I have the joy of working with students from all over East San Jose to discover more about computer science. I also find time to mountain bike, spend time with close friends, and occassionally play some guitar.
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
